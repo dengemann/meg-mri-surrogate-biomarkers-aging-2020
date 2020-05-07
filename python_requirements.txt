@@ -1,0 +1,11 @@
+scipy>=0.9
+numpy>=1.6.1
+scikit-learn>=0.14.1
+joblib>=0.11.0
+nibabel>=1.2.0
+nilearn>=0.3.0
+nistats
+pandas>=0.19.2
+pydocstyle
+flake8
+codespell
