@@ -334,7 +334,8 @@ colors_fig2b <- setNames(
 
 sort_idx <- order(aggregate(MAE_diff ~ family, data_diff, mean)$MAE_diff)
 
-levels(data_diff$family) <- c("MRI, fMRI, MEG", "MRI", "MRI, MEG", "MRI, fMRI")
+levels(data_diff$family) <- c("MRI, fMRI, MEG", "MRI", "MRI, fMRI", "MRI, MEG")
+
 
 fig2b <- ggplot(
   data = data_diff,
