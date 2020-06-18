@@ -329,8 +329,9 @@ data_diff <- within(subset(data_stacked_sel, family != "Chance"),
 
 legend_name <- "Improvement over anatomical MRI"
 colors_fig2b <- setNames(
-  with(color_cats, c(black, `blueish green`, orange, blue)),
-  c("MRI, fMRI, MEG", 'MRI, MEG', 'MRI, fMRI', 'MRI'))
+  with(color_cats,
+       c(black, orange, `blueish green`, blue)),
+  c("MRI, fMRI, MEG", 'MRI, fMRI', 'MRI, MEG', 'MRI'))
 
 sort_idx <- order(aggregate(MAE_diff ~ family, data_diff, mean)$MAE_diff)
 
